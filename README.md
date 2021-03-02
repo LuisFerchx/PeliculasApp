@@ -1,7 +1,10 @@
 # peliculas
-
-A new Flutter project.
-
+ES:
+Proyecto para consumir una API de peliculas y mostrar la información
+EN:
+Project to consume a movie API and display the information
+# autor
+LUIS GUERRERO
 ## Getting Started
 
 This project is a starting point for a Flutter application.
