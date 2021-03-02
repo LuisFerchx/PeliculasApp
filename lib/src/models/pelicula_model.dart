@@ -8,6 +8,7 @@ class Peliculas {
   Peliculas();
 
   //constructor de peliculas a items
+  //recibira el json mapeado
   Peliculas.fromJsonList(List<dynamic> jsonList) {
     //recibe un jsonList, que es una lista de las peliculas
     if (jsonList == null) return; // si es nulo pues no hace nada
@@ -29,11 +30,11 @@ class Pelicula {
   String backdropPath;
   List<int> genreIds;
   int id;
-  OriginalLanguage originalLanguage;
+  String originalLanguage;
   String originalTitle;
   String overview;
   double popularity;
-  String posterPath;
+  String posterPath; //poster de la peliucla
   String releaseDate;
   String title;
   bool video;
@@ -73,6 +74,17 @@ class Pelicula {
     voteAverage = json['vote_average'] / 1;
     voteCount = json['vote_count'];
   }
+
+  getPosterImg(){
+
+    if(posterPath.isEmpty){
+      return 'https://www.pharmalookup.com/images/noresult.gif';
+    }else{
+      return 'https://image.tmdb.org/t/p/w500/$posterPath';
+    }
+
+    
+  }
+
 }
 
-enum OriginalLanguage { EN, ZH, RU, JA }
