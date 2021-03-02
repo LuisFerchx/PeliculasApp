@@ -1,3 +1,6 @@
+//api key 577c3d9639c3fc12fa1176a08708170a
+//solicitud example https://api.themoviedb.org/3/movie/550?api_key=577c3d9639c3fc12fa1176a08708170a
+//token eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NzdjM2Q5NjM5YzNmYzEyZmExMTc2YTA4NzA4MTcwYSIsInN1YiI6IjYwMzQ4MzdhNjA5NzUwMDAzZmMxNGY1ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HThwZgH8-lQB23155tlW7tf7UtMeZ0YGVq9QYenP8VU
 class Peliculas {
   //contenedor de peliculas
   List<Pelicula> items = new List();
